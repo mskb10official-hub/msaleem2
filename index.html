@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammad Saleem | Web Developer & Designer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Glitch Grid Background -->
+  <div class="grid-bg"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      <span class="logo-text">MS</span>
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        <span>Available for Work</span>
+      </div>
+      <div class="hero-greeting">Hello, I'm</div>
+      <h1 class="hero-name glitch" data-text="Muhammad Saleem">Muhammad Saleem</h1>
+      <div class="hero-roles">
+        <span class="role-prefix">I am a </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-bio">
+        A passionate multi-skilled digital creator from Muzaffargarh, Punjab — building clean web experiences, crafting stunning designs, and delivering real results. From code to content, I bring ideas to life.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Work</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span>Hire Me</span>
+          <i class="fas fa-bolt"></i>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="15">0</span><span>+</span>
+          <span class="stat-label">Skills</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="47">0</span><span>+</span>
+          <span class="stat-label">WPM Typing</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span><span>%</span>
+          <span class="stat-label">Dedication</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image-wrapper">
+      <div class="hex-ring ring1"></div>
+      <div class="hex-ring ring2"></div>
+      <div class="hex-ring ring3"></div>
+      <div class="profile-hex">
+        <img src="saleem1.png" alt="Muhammad Saleem" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Muhammad+Saleem&background=00ff88&color=0a0a0a&size=400&font-size=0.3'"/>
+      </div>
+      <div class="floating-badge badge1"><i class="fab fa-html5"></i> HTML5</div>
+      <div class="floating-badge badge2"><i class="fab fa-css3-alt"></i> CSS3</div>
+      <div class="floating-badge badge3"><i class="fab fa-js"></i> JS</div>
+      <div class="floating-badge badge4"><i class="fas fa-robot"></i> AI</div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about section" id="about">
+    <div class="section-header">
+      <span class="section-tag">// about_me</span>
+      <h2 class="section-title">Who Am <span class="accent">I?</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card main-card">
+        <div class="card-glow"></div>
+        <div class="about-icon"><i class="fas fa-user-astronaut"></i></div>
+        <h3>Muhammad Saleem</h3>
+        <p class="about-role">Web Developer · Student · Designer</p>
+        <p class="about-text">
+          I'm a dedicated and versatile digital professional from Muzaffargarh, Punjab, Pakistan. Currently expanding my expertise across web development, graphic design, AI tools, and digital marketing. I believe in continuous learning and turning every project into a masterpiece.
+        </p>
+        <p class="about-text">
+          With a typing speed of 47+ WPM and hands-on experience in MS Office, video editing, 3D animation, social media management and more — I bring both technical skills and creative vision to every project I take on.
+        </p>
+        <div class="about-location">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Muzaffargarh, Punjab, Pakistan</span>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <span class="info-label">Email</span>
+            <span class="info-value">mr.saleem755@gmail.com</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <span class="info-label">Phone</span>
+            <span class="info-value">03037455701</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-map-pin"></i></div>
+          <div>
+            <span class="info-label">Location</span>
+            <span class="info-value">Punjab, Pakistan</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-keyboard"></i></div>
+          <div>
+            <span class="info-label">Typing Speed</span>
+            <span class="info-value">47+ WPM & Growing</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <span class="info-label">Status</span>
+            <span class="info-value">Student · Open to Work</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary full-width">
+          <span>Let's Work Together</span>
+          <i class="fas fa-handshake"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="skills section" id="skills">
+    <div class="section-header">
+      <span class="section-tag">// my_skills</span>
+      <h2 class="section-title">What I <span class="accent">Do</span></h2>
+    </div>
+
+    <div class="skills-categories">
+
+      <div class="skill-category">
+        <div class="cat-header">
+          <i class="fas fa-code cat-icon"></i>
+          <h3>Web Development</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-top"><span>HTML5</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>CSS3</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>JavaScript</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="cat-header">
+          <i class="fas fa-briefcase cat-icon"></i>
+          <h3>MS Office Suite</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-top"><span>MS Word</span><span>95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>MS Excel</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>PowerPoint</span><span>92%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>InPage (Urdu)</span><span>88%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="cat-header">
+          <i class="fas fa-palette cat-icon"></i>
+          <h3>Design & Media</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-top"><span>Graphic Designing</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>Video Editing</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>Audio Editing</span><span>72%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>3D Animation</span><span>68%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="cat-header">
+          <i class="fas fa-robot cat-icon"></i>
+          <h3>AI & Digital</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-top"><span>AI Tools Expert</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>AI Documentary</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>Social Media Mgmt</span><span>88%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>Digital Marketing</span><span>82%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="cat-header">
+          <i class="fas fa-database cat-icon"></i>
+          <h3>Data & Admin</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <div class="skill-top"><span>Data Entry</span><span>95%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>Data Management</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-top"><span>Resume / CV Making</span><span>93%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="93"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Skill Badges -->
+    <div class="skill-badges">
+      <span class="badge"><i class="fab fa-html5"></i> HTML5</span>
+      <span class="badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+      <span class="badge"><i class="fab fa-js-square"></i> JavaScript</span>
+      <span class="badge"><i class="fas fa-file-word"></i> MS Word</span>
+      <span class="badge"><i class="fas fa-file-excel"></i> Excel</span>
+      <span class="badge"><i class="fas fa-file-powerpoint"></i> PowerPoint</span>
+      <span class="badge"><i class="fas fa-robot"></i> AI Expert</span>
+      <span class="badge"><i class="fas fa-video"></i> Video Edit</span>
+      <span class="badge"><i class="fas fa-headphones"></i> Audio Edit</span>
+      <span class="badge"><i class="fas fa-cube"></i> 3D Anim</span>
+      <span class="badge"><i class="fas fa-bullhorn"></i> Marketing</span>
+      <span class="badge"><i class="fas fa-keyboard"></i> 47+ WPM</span>
+      <span class="badge"><i class="fas fa-file-alt"></i> InPage</span>
+      <span class="badge"><i class="fas fa-share-alt"></i> Social Media</span>
+      <span class="badge"><i class="fas fa-id-card"></i> CV Maker</span>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="projects section" id="projects">
+    <div class="section-header">
+      <span class="section-tag">// my_projects</span>
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card" data-cat="web">
+        <div class="project-img-wrap">
+          <div class="project-thumb web-thumb">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="project-overlay">
+            <span class="project-cat">Web Dev</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Personal Portfolio Website</h3>
+          <p>A fully responsive dark-themed portfolio website built with HTML, CSS & JavaScript showcasing all skills and projects.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="design">
+        <div class="project-img-wrap">
+          <div class="project-thumb design-thumb">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <div class="project-overlay">
+            <span class="project-cat">Graphic Design</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Brand Identity Designs</h3>
+          <p>Multiple logo designs, social media posts, banners, and complete brand kits created for local businesses.</p>
+          <div class="project-tags">
+            <span>Graphic Design</span><span>Branding</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="data">
+        <div class="project-img-wrap">
+          <div class="project-thumb data-thumb">
+            <i class="fas fa-table"></i>
+          </div>
+          <div class="project-overlay">
+            <span class="project-cat">Data Work</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Excel Data Management System</h3>
+          <p>Advanced Excel spreadsheets with formulas, pivot tables, dashboards and automated data management for office use.</p>
+          <div class="project-tags">
+            <span>Excel</span><span>Data Entry</span><span>Management</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="ai">
+        <div class="project-img-wrap">
+          <div class="project-thumb ai-thumb">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="project-overlay">
+            <span class="project-cat">AI Project</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>AI Documentary Production</h3>
+          <p>Created a full AI-powered documentary using AI tools, voice generation, image synthesis and video editing.</p>
+          <div class="project-tags">
+            <span>AI Tools</span><span>Video Edit</span><span>Audio</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="media">
+        <div class="project-img-wrap">
+          <div class="project-thumb media-thumb">
+            <i class="fas fa-video"></i>
+          </div>
+          <div class="project-overlay">
+            <span class="project-cat">Media</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>3D Animation Reel</h3>
+          <p>Short 3D animated sequences and motion graphics produced using animation software for social media campaigns.</p>
+          <div class="project-tags">
+            <span>3D Animation</span><span>Motion Graphics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" data-cat="office">
+        <div class="project-img-wrap">
+          <div class="project-thumb office-thumb">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <div class="project-overlay">
+            <span class="project-cat">Office Work</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Professional CV & Resume Builder</h3>
+          <p>Created 50+ professional CVs and resumes in MS Word and InPage for clients across different fields.</p>
+          <div class="project-tags">
+            <span>MS Word</span><span>InPage</span><span>Design</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section class="education section" id="education">
+    <div class="section-header">
+      <span class="section-tag">// education</span>
+      <h2 class="section-title">My <span class="accent">Journey</span></h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="tl-icon"><i class="fas fa-school"></i></div>
+          <div class="tl-content">
+            <span class="tl-year">FA Arts</span>
+            <h3>Govt. Higher Secondary School</h3>
+            <p class="tl-place"><i class="fas fa-map-marker-alt"></i> Shah Jamal, Punjab</p>
+            <p>Completed FA in Arts — building a strong academic foundation with analytical and creative thinking skills.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot active"></div>
+        <div class="timeline-card active-card">
+          <div class="tl-icon"><i class="fas fa-laptop"></i></div>
+          <div class="tl-content">
+            <span class="tl-year">2025 · Current</span>
+            <h3>Computer Diploma + MS Office</h3>
+            <p class="tl-place"><i class="fas fa-building"></i> MNB Software Agency</p>
+            <p>Completing Computer Diploma with full MS Office Suite mastery — Word, Excel, PowerPoint, InPage, Data Entry, and advanced computer skills. Currently enrolled and progressing.</p>
+            <span class="tl-badge">In Progress</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot future"></div>
+        <div class="timeline-card future-card">
+          <div class="tl-icon"><i class="fas fa-rocket"></i></div>
+          <div class="tl-content">
+            <span class="tl-year">Future</span>
+            <h3>Continuing Education & Skills</h3>
+            <p class="tl-place"><i class="fas fa-globe"></i> Online & Institutes</p>
+            <p>Actively expanding skills in Web Development, AI Tools, Digital Marketing, 3D Animation, and more. The learning never stops.</p>
+            <span class="tl-badge future-badge">Ongoing</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact section" id="contact">
+    <div class="section-header">
+      <span class="section-tag">// contact_me</span>
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+    </div>
+    <p class="contact-sub">Have a project in mind or want to collaborate? I'm just a message away.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <span class="contact-label">Email Me</span>
+            <a href="mailto:mr.saleem755@gmail.com" class="contact-value">mr.saleem755@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <span class="contact-label">Call / WhatsApp</span>
+            <a href="https://wa.me/923037455701" class="contact-value">0303-7455701</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+          <div>
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Muzaffargarh, Punjab, Pakistan</span>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="mailto:mr.saleem755@gmail.com" class="social-btn" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://wa.me/923037455701" class="social-btn" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="#" class="social-btn" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-btn" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Enter your name" id="formName"/>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com" id="formEmail"/>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="Project / Collaboration / Query" id="formSubject"/>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell me about your project..." rows="5" id="formMessage"></textarea>
+        </div>
+        <button class="btn btn-primary full-width" onclick="sendMessage()">
+          <span>Send Message</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+        <div id="formSuccess" class="form-success" style="display:none;">
+          <i class="fas fa-check-circle"></i> Message ready! Redirecting to WhatsApp...
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">MS</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <p>Crafted with <span class="heart">❤</span> by Muhammad Saleem · Muzaffargarh, Pakistan</p>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Muhammad Saleem. All rights reserved.</span>
+      <span class="footer-nav">
+        <a href="#home">Home</a> · 
+        <a href="#skills">Skills</a> · 
+        <a href="#projects">Projects</a> · 
+        <a href="#contact">Contact</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-top" id="backTop" title="Back to Top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
